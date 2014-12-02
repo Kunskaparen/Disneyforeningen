@@ -16,6 +16,7 @@ body {
 	margin: 0; /*Den här marginalen är jävligt viktigt för att det inte ska bli en ful box uppe i toppen ovanför wrappern*/
 }
 
+<<<<<<< HEAD
 div#wrapper{
 	/*Den här har nu getts regler för sitt egna id "wrapper", så kan vi ha fler divs där vi vill och vara specifika för den här*/
 	position:relative;
