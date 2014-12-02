@@ -1,7 +1,8 @@
 ﻿/* CSS placeholder*/
 
-/* I det vita runt om wrappern klipper vi sen in en bild, eller så kanske det redan är en bild på. När du commitar nästa gång får du ta och göra add på bildfoldern.*/
-/*Vi får dra upp nav:en till toppen och göra den till full vidd, utan mellanrum mellan knapparna, och några omärkliga marginaler*/
+/* I det vita runt om wrappern klipper vi sen in en bild, eller så kanske det redan är en bild på. När du commitar nästa gång får du ta och göra add på bildfoldern.
+	Vi får dra upp nav:en till toppen och göra den till full vidd, utan mellanrum mellan knapparna, och några subtila borders. 
+	Vi kan lösa våra/mina problem med positionering av nav:en genom att positionera den absolut, men om vi gör den fixed så följer den med coolt på sidan.*/
 
 body {
 	position:relative;
@@ -13,9 +14,6 @@ body {
 	/*Ska vi kanske ha en bakgrundsbild eller mönster? Svar: Ja. Facking frozen.*/
 	color:blue; /*Så det här är varför all text är blå, trodde nog att det var någe tix med det*/
 	margin: 0; /*Den här marginalen är jävligt viktigt för att det inte ska bli en ful box uppe i toppen ovanför wrappern*/
-	border-color:green;
-	border-style:solid;
-	border-width:4px;
 }
 
 div#wrapper{
@@ -28,9 +26,6 @@ div#wrapper{
 	padding:1em;
 	height:100%; /*För en snygg design fixade jag så wrappern går hela sidan ner, fast vi kanske kan göra den lite bredare*/
 	/*Bakgrunden kan vi klippa till specifikt i en bildeditor, med bara vitt där wrappern kommer vara.*/
-	border-color:red;
-	border-style:solid;
-	border-width:4px;
 }
 
 nav {
@@ -38,9 +33,9 @@ nav {
 	position:fixed;
 	top:0px;
 	width:100%;
-	border-color:blue;
-	border-style:solid;
-	border-width:3px;
+	/*border-color:red;
+	border-width:4px;
+	border-style:solid; Med den här kan du kolla hur nav:en går*/
 }
 
 nav li {
@@ -48,7 +43,6 @@ nav li {
 	display:inline;
 	padding:1em 1em;
 	background-color:#DAB5FF;
-	font-weight:bold;
 }
 
 
@@ -56,6 +50,7 @@ nav li {
 nav li a {
 	text-decoration:none;
 	color:black;
+	font-weight:bold; /*Flyttade font weight till resten av textformateringen*/
 }
 
 nav li:hover  {
