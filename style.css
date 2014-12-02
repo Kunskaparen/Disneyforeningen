@@ -5,3 +5,8 @@ body {
 	/*Ska vi kanske ha en bakgrundsbild eller mönster? Svar: Ja. Facking frozen.*/
 	color:blue;
 }
+
+nav li {
+	display:inline;
+	margin:auto;
+}
