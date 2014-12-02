@@ -1,6 +1,8 @@
 ﻿/* CSS placeholder*/
 
 body {
+	height:100%;
+	width:100%;
 	font-family:"Helvetica";
 	font-size:16px;
 	background-color:#B5B5FF;
@@ -37,12 +39,23 @@ nav li:active {
 	background-color:green;
 }
 
+
+
 .fordamnIE {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	background-size:cover;
+	text-align:center;
+	background-color:white;
 }
 
 .fordamnIE * {
+	display:block;
+	color:black;
+}
 
+.fordamnIE img {
+	height:200;
+	width:150;
 }
