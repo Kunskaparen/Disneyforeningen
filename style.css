@@ -16,7 +16,6 @@ body {
 	margin: 0; /*Den här marginalen är jävligt viktigt för att det inte ska bli en ful box uppe i toppen ovanför wrappern*/
 }
 
-<<<<<<< HEAD
 div#wrapper{
 	/*Den här har nu getts regler för sitt egna id "wrapper", så kan vi ha fler divs där vi vill och vara specifika för den här*/
 	position:relative;
@@ -65,6 +64,10 @@ nav li:active {
 	/*En bra grej man kan göra för att få en knapp att ha "knapp-känsla" är att ha en border som vid klick blir border-style:inset*/
 }
 
+#fint {
+	width:180px;
+	height:90px
+}
 
 /*Alla fordamnIE-grejer är till för att serva IE-användare*/
 .fordamnIE {
