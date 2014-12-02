@@ -3,7 +3,7 @@
 body {
 	font-family:"Helvetica";
 	font-size:16px;
-	background-color:#B5B5FF;
+	/*background-color:#B5B5FF;*/
 	/*Ska vi kanske ha en bakgrundsbild eller mönster? Svar: Ja. Facking frozen.*/
 	color:blue;
 }
@@ -16,18 +16,17 @@ nav li {
 	font-size:1em;
 	display:inline;
 	padding:1em 1em;
-	background-color:pink;
+	background-color:#DAB5FF;
 	font-weight:bold;
 }
 nav li a {
 	text-decoration:none;
-	color:orange;
+	color:black;
 }
 
 nav li:hover  {
-	background-color:brown;
+	background-color:#9090CC;
 	padding:1em 1em;
-	font-size:110%;
 
 }
 nav li:active {
