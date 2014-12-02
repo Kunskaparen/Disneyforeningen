@@ -16,3 +16,11 @@ nav li {
 	background-color:pink;
 	margin:-10px;
 }
+
+.fordamnIE {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.fordamnIE *
