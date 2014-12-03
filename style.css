@@ -7,6 +7,7 @@
 body {
 	background:url("Bilder/up.jpg");
 	background-attachment:fixed;
+	background-size:cover;
 	position:relative;
 	height:100%;
 	width:100%;
@@ -18,34 +19,56 @@ body {
 	margin: 0; /*Den här marginalen är jävligt viktigt för att det inte ska bli en ful box uppe i toppen ovanför wrappern*/
 }
 
+#spacer1 {
+	height:50px;
+}
+
 div#wrapper{
 	/*Den här har nu getts regler för sitt egna id "wrapper", så kan vi ha fler divs där vi vill och vara specifika för den här*/
-	position:relative;
+	/*position:relative;*/
+	border-width:4px;
+	border-color:#5A5A7F;
+	border-style:solid;
 	background-color:#B5B5FF;
 	margin-left:12em;
 	margin-right:12em;
 	margin-top:0em;
-	padding:1em;
+	padding:4em;
+	padding-top:1em;
 	height:100%; /*För en snygg design fixade jag så wrappern går hela sidan ner, fast vi kanske kan göra den lite bredare*/
 	/*Bakgrunden kan vi klippa till specifikt i en bildeditor, med bara vitt där wrappern kommer vara.*/
 }
 
 nav {
-	text-align:center;  
+	/*text-align:center;*/  
 	position:fixed;
 	top:0px;
 	left:0px;
 	width:100%;
-	border-color:red;
+	background-color:#DAB5FF;
+	border-width:0px;
+	border-bottom-width:1px;
+	border-bottom-color:#000000;
+	border-style:solid;
+	/*border-color:red;
 	border-width:4px;
-	border-style:solid; /*Med den här kan du kolla hur nav:en går*/
+	border-style:solid; Med den här kan du kolla hur nav:en går*/
 }
 
-nav li {
+#jävel { /*Tixig jävel som fixar marginal i naven och förstör formatet.*/
+	margin:0px;
+	padding:0px;
+	/*Fan vad du suger jävel, du sabbar allt, du verkligen Tobiar oss*/
+}
+
+nav li {	
 	font-size:1em;
-	display:inline;
-	padding:1em 1em;
+	display:inline-block;
+	padding:1em 2em;
 	background-color:#DAB5FF;
+	/*border-style:solid;
+	border-width:1px;
+	border-color:#DAB5FF;*/
 }
 
 
@@ -58,18 +81,23 @@ nav li a {
 
 nav li:hover  {
 	background-color:#9090CC;
+	border-color:#9090CC;
 	/*padding:1em 1em; Den här är helt onödig*/
 
 }
 nav li:active {
-	/*background-color:green; Hur tänkte du att grön var ett bra designval? Bort med skiten*/ 
 	background-color:#7373A3;
+	text-decoration:underline;
+	/*border-style:inset;*/
 	/*En bra grej man kan göra för att få en knapp att ha "knapp-känsla" är att ha en border som vid klick blir border-style:inset*/
 }
 
-#fint {
+#Logga {
 	width:180px;
 	height:90px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 /*Alla fordamnIE-grejer är till för att serva IE-användare*/
