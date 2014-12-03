@@ -29,6 +29,7 @@ div#wrapper{
 	border-width:4px;
 	border-color:#5A5A7F;
 	border-style:solid;
+	border-top-width:0;
 	background-color:#B5B5FF;
 	margin-left:12em;
 	margin-right:12em;
@@ -58,20 +59,58 @@ nav {
 #jävel { /*Tixig jävel som fixar marginal i naven och förstör formatet.*/
 	margin:0px;
 	padding:0px;
+	width:50%
 	/*Fan vad du suger jävel, du sabbar allt, du verkligen Tobiar oss*/
 }
 
 nav li {	
 	font-size:1em;
-	display:inline-block;
-	padding:1em 2em;
+	padding:1em 1.5em;
 	background-color:#DAB5FF;
 	/*border-style:solid;
 	border-width:1px;
 	border-color:#DAB5FF;*/
 }
 
+#jävel li {
+	display:inline-block;
+} /*för att kunna få login att inte vara display:inline-block;*/
 
+#login {
+	position:absolute;
+	height:50px;
+	margin:0px;
+	padding:0;
+	top:0px;
+	right:0px;
+	color:black;
+	/*overflow:hidden;*/
+}
+
+#login li, ul:hover, active {
+	background-color:transparent;
+	text-decoration:none;
+}
+
+#login ul {
+	margin:0px;
+	display:block;
+}
+
+#login ul li{
+	padding:0px;
+	text-align:right;
+}
+
+#login p {
+	margin:2px;
+}
+
+.strip {
+	list-style-image:none;
+	list-style-type:none;
+	
+}
 
 nav li a {
 	text-decoration:none;
