@@ -5,7 +5,7 @@
 	Vi kan lösa våra/mina problem med positionering av nav:en genom att positionera den absolut, men om vi gör den fixed så följer den med coolt på sidan.*/
 
 body {
-	background:url("Bilder/BackgroundUpp.jpg");
+	background:url("Bilder/up.jpg");
 	background-attachment:fixed;
 	position:relative;
 	height:100%;
