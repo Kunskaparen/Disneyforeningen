@@ -5,18 +5,20 @@ var ieAlert = function(){
 };
 
 var taUppgifter = function(){ 
-	document.getElementById("submitLogin").addEventlistener("onclick",login,True);
+	document.getElementById("submitLogin").addEventListener("onclick",login);
 }
 var login = function(){
-	
+	var enteredName  = document.getElementById("enteredName");
+	var enteredPassword = document.getElementById("enteredPassword");
 	var loginuppgifter = {"Baloo":"Halabaloo"};
 	for(var användarnamn in loginuppgifter){
-		if (användarnamn.toLowerCase == enteredname.toLowerCase && loginuppgifter[användarnamn] == enteredpassword){
-			var inloggad = True
+		if (användarnamn.toLowerCase == enteredName.toLowerCase && loginuppgifter[användarnamn] == enteredPassword){
+			alert("Du är nu inloggad på sidan!")
+			var inloggad = true
 			var inloggadsom = användarnamn
-			}
 		}
 	}
-};
+}
+
 
 window.onload = taUppgifter;
