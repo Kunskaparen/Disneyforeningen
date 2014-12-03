@@ -5,6 +5,7 @@
 	Vi kan lösa våra/mina problem med positionering av nav:en genom att positionera den absolut, men om vi gör den fixed så följer den med coolt på sidan.*/
 
 body {
+	background-attachment:fixed;	
 	position:relative;
 	height:100%;
 	width:100%;
@@ -32,10 +33,11 @@ nav {
 	text-align:center;  
 	position:fixed;
 	top:0px;
+	left:0px;
 	width:100%;
-	/*border-color:red;
+	border-color:red;
 	border-width:4px;
-	border-style:solid; Med den här kan du kolla hur nav:en går*/
+	border-style:solid; /*Med den här kan du kolla hur nav:en går*/
 }
 
 nav li {
@@ -66,7 +68,7 @@ nav li:active {
 
 #fint {
 	width:180px;
-	height:90px
+	height:90px;
 }
 
 /*Alla fordamnIE-grejer är till för att serva IE-användare*/
