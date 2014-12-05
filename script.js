@@ -8,12 +8,13 @@ var taUppgifter = function(){
 	document.getElementById("submitLogin").addEventlistener("onclick",login,True);
 }
 var login = function(){
-	
-	var loginuppgifter = {"Baloo":"Halabaloo"};
-	for(var användarnamn in loginuppgifter){
-		if (användarnamn.toLowerCase == enteredname.toLowerCase && loginuppgifter[användarnamn] == enteredpassword){
+	var enteredName = document.getElementById("enteredName").value;
+	var enteredPassword
+	var loginUppgifter = {"Baloo":"Halabaloo"};
+	for(var användarnamn in loginUppgifter){
+		if (användarnamn.toLowerCase == enteredName.toLowerCase && loginUppgifter[användarnamn] == enteredPassword){
 			var inloggad = True
-			var inloggadsom = användarnamn
+			var inloggadSom = användarnamn
 			}
 		}
 	}
