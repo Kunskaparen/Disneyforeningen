@@ -5,31 +5,24 @@ var ieAlert = function(){
 };
 
 var taUppgifter = function(){ 
-	document.getElementById("submitLogin").addEventListener("onclick",login);
+	document.getElementById("submitLogin").addEventListener("click",login,true);
 }
 var login = function(){
-<<<<<<< HEAD
 	var enteredName = document.getElementById("enteredName").value;
-	var enteredPassword
+	var enteredPassword = document.getElementById("enteredPassword").value;
 	var loginUppgifter = {"Baloo":"Halabaloo"};
 	for(var användarnamn in loginUppgifter){
 		if (användarnamn.toLowerCase == enteredName.toLowerCase && loginUppgifter[användarnamn] == enteredPassword){
-			var inloggad = True
-			var inloggadSom = användarnamn
-			}
-=======
-	var enteredName  = document.getElementById("enteredName");
-	var enteredPassword = document.getElementById("enteredPassword");
-	var loginuppgifter = {"Baloo":"Halabaloo"};
-	for(var användarnamn in loginuppgifter){
-		if (användarnamn.toLowerCase == enteredName.toLowerCase && loginuppgifter[användarnamn] == enteredPassword){
-			alert("Du är nu inloggad på sidan!")
 			var inloggad = true
-			var inloggadsom = användarnamn
->>>>>>> 1f7bbfa82f418fb4544dad2f4202b1c6089d0bbe
+			var inloggadSom = användarnamn
+			console.log("Login lyckades")
+			console.log("Inloggad som: "+användarnamn)
+			alert("Du är inloggad som: "+användarnamn)
+			break
+		}
+		else{
+			alert("Du loggades inte in");
 		}
 	}
 }
-
-
 window.onload = taUppgifter;

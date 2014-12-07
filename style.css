@@ -4,6 +4,11 @@
 	Vi får dra upp nav:en till toppen och göra den till full vidd, utan mellanrum mellan knapparna, och några subtila borders. 
 	Vi kan lösa våra/mina problem med positionering av nav:en genom att positionera den absolut, men om vi gör den fixed så följer den med coolt på sidan.*/
 
+html {
+	height:100%;
+	/*Det här fixar vår avsaknad av <!doctype>*/
+}
+	
 body {
 	background:url("Bilder/up.jpg");
 	background-attachment:fixed;
@@ -30,6 +35,7 @@ div#wrapper{
 	border-color:#5A5A7F;
 	border-style:solid;
 	border-top-width:0;
+	border-bottom-width:0;
 	background-color:#B5B5FF;
 	margin-left:12em;
 	margin-right:12em;
@@ -46,6 +52,7 @@ nav {
 	top:0px;
 	left:0px;
 	width:100%;
+	max-height:53px;/*Verkar inte funka*/
 	background-color:#DAB5FF;
 	border-width:0px;
 	border-bottom-width:1px;
@@ -59,7 +66,8 @@ nav {
 #jävel { /*Tixig jävel som fixar marginal i naven och förstör formatet.*/
 	margin:0px;
 	padding:0px;
-	width:50%
+	width:50%;
+	height:100%; /*den jäveln skalar inte med nav:en som den ska, utan den här (Fan, funkar ju ändå inte)*/
 	/*Fan vad du suger jävel, du sabbar allt, du verkligen Tobiar oss*/
 }
 
@@ -67,6 +75,7 @@ nav li {
 	font-size:1em;
 	padding:1em 1.5em;
 	background-color:#DAB5FF;
+	height:100%; /*Det här är när nav:en skalar om sig, så att de fyller hela naven*/
 	/*border-style:solid;
 	border-width:1px;
 	border-color:#DAB5FF;*/
@@ -109,7 +118,6 @@ nav li {
 .strip {
 	list-style-image:none;
 	list-style-type:none;
-	
 }
 
 nav li a {
