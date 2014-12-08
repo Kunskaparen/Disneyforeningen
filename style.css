@@ -135,6 +135,7 @@ nav li:hover  {
 nav li:active {
 	background-color:#7373A3;
 	text-decoration:underline;
+	color:black; /*Borde fixa att underlinen blir blå i Firefox*/
 	/*border-style:inset;*/
 	/*En bra grej man kan göra för att få en knapp att ha "knapp-känsla" är att ha en border som vid klick blir border-style:inset*/
 }
