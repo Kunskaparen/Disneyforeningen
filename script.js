@@ -21,6 +21,7 @@ var login = function(){
 			break
 		}
 		else{
+			console.log("Login misslyckades")
 			alert("Du loggades inte in");
 		}
 	}
