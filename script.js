@@ -13,11 +13,11 @@ var login = function(){
 	var loginUppgifter = {"Baloo":"Halabaloo"};
 	//Snälla hacka inte oss
 	for(var användarnamn in loginUppgifter){
-		if (enteredName == null || enteredName == undefined || enteredName == ""){
+		if (enteredName == ""){
 			console.log("Inget användarnamn")
 			alert("Skriv in ett användarnamn")
 		}
-		else if (enteredPassword == null || enteredPassword == undefined || enteredPassword == ""){
+		else if (enteredPassword == ""){
 			console.log("Inget lösenord")
 			alert("Skriv in ett lösenord")
 		}
